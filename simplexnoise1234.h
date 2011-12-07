@@ -29,7 +29,9 @@
  * on some platforms. Having both versions could be useful.
  */
 
+#ifdef __cplusplus
 extern "C" {
+#endif
 
 /** 1D, 2D, 3D and 4D float Perlin simplex noise
  */
@@ -38,4 +40,6 @@ float snoise2( float x, float y );
 float snoise3( float x, float y, float z );
 float snoise4( float x, float y, float z, float w );
 
+#ifdef __cplusplus
 }
+#endif

@@ -25,7 +25,9 @@
  * on some platforms. A templatized version of Noise1234 could be useful.
  */
 
+#ifdef __cplusplus
 extern "C" {
+#endif
 
 /** 1D, 2D, 3D and 4D float Perlin noise, SL "noise()"
  */
@@ -41,4 +43,6 @@ float pnoise2( float x, float y, int px, int py );
 float pnoise3( float x, float y, float z, int px, int py, int pz );
 float pnoise4( float x, float y, float z, float w,
                               int px, int py, int pz, int pw );
+#ifdef __cplusplus
 }
+#endif

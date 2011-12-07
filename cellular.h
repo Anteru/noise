@@ -42,8 +42,11 @@
    This can be fixed by increasing the internal points-per-cube
    density in the source code, at the expense of slower
    computation. The book lists the details of this tuning.  */
-
+#ifdef __cplusplus
 extern "C" {
+#endif
 void Worley(double at[3], long max_order,
 	    double F[2], double delta[2][3], unsigned long ID[2]);
+#ifdef __cplusplus
 }
+#endif

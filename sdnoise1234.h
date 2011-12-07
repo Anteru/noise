@@ -32,7 +32,9 @@
  *
  */
 
+#ifdef __cplusplus
 extern "C" {
+#endif
 
 /** 1D simplex noise with derivative.
  * If the last argument is not null, the analytic derivative
@@ -60,4 +62,6 @@ float sdnoise3( float x, float y, float z,
 float sdnoise4( float x, float y, float z, float w,
                 float *dnoise_dx, float *dnoise_dy,
                 float *dnoise_dz, float *dnoise_dw);
+#ifdef __cplusplus
 }
+#endif
